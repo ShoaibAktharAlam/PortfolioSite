@@ -124,17 +124,19 @@ body {
 }
 
 .btn.primary {
-    background: #fc8c05;
+    background: #333;
     color: white;
 }
 
 .btn.secondary {
-    border: 2px solid #fc8c05;
-    color: #fc8c05;
+    border: 2px solid #333;
+    color: #333;
 }
 
 .btn:hover {
     transform: translateY(-2px);
+    color: #333;
+    background-color: #fc8c05;
 }
 
 .hero-image img {
