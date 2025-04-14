@@ -199,7 +199,7 @@ body {
 .hero-image::before {
     border-top: 10px solid #fc8c05;
     border-left: 10px solid #fc8c05;
-    top: -30px;
+    top: -35px;
     left: 30px;
 }
 
@@ -414,20 +414,26 @@ body {
     .nav-links {
         position: fixed;
         top: 70px; 
-        right: -260px;
-        width: 125px;
-        height: calc(100vh - 70px);
-        background: #fff;
+        right: -260px; 
+        width: 90px;
+        height: calc(100vh - 70px); 
         flex-direction: column;
         gap: 1.5rem;
-        padding: 2rem 1.5rem;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        padding: 8rem 2rem;
         transition: left 0.3s ease;
-        z-index: 999;
+        z-index: 999; 
     }
 
     .nav-links.active {
-        right: 0;
+        right: 0; 
+    }
+
+    .nav-links a {
+        font-size: 0; 
+    }
+
+    .nav-links a i {
+        font-size: 1.5rem; 
     }
 
     .hero-content {
