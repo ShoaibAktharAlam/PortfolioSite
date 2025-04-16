@@ -97,14 +97,23 @@ body {
     color: #fc8c05;
 }
 
+.nav-links i {
+    display: none;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
 }
 
+.menu-toggle i:hover{
+    color: #fc8c05;
+}
+
+
 /* Hero Section */
 .hero {
-    padding: 120px 0 60px;
+    padding: 150px 0 60px;
 }
 
 .hero-content {
@@ -112,7 +121,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
 }
 
 .hero-title {
@@ -137,7 +146,7 @@ body {
 
 .social-icons  a {
     font-size: 2rem;
-    color: black;
+    color: #333;
     transition: color 0.3s ease;
 }
 
@@ -213,7 +222,7 @@ body {
 
 /* About Section */
 .about {
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .about-grid {
@@ -269,7 +278,7 @@ body {
 
 /* Skills Section */
 .skills {
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .skills-grid {
@@ -295,7 +304,7 @@ body {
 
 /* Projects Section */
 .projects {
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .project-grid {
@@ -337,7 +346,7 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .contact-grid {
@@ -386,7 +395,6 @@ body {
 
 /* Footer */
 .footer-container {
-    position: fixed;
     text-align: center;
     padding: 1.5rem 0;
     bottom: 0;
@@ -399,31 +407,49 @@ body {
     align-items: center;
 }
 
+.footer-container span{
+    color: #fc8c05;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.theme-toggle a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle a:hover {
+    color: #fc8c05;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
         right: 2rem;
         display: block;
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1.5rem;
         z-index: 1100;
-        position: absolute;
-    }
-
-    .theme-toggle {
-        right: 6rem;
-        font-size: 2rem;
-        display: block;
-        cursor: pointer;
         position: absolute;
     }
 
     .nav-links {
         position: fixed;
-        top: 70px; 
-        right: -260px; 
+        top: 70px;
+        right: -260px;
         width: 90px;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 70px); 
         flex-direction: column;
         gap: 1.5rem;
         padding: 8rem 2rem;
@@ -432,15 +458,19 @@ body {
     }
 
     .nav-links.active {
-        right: 0;
+        right: 0; 
     }
 
     .nav-links a {
-        font-size: 0; 
+        font-size: 0;
     }
 
     .nav-links a i {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
+    }
+
+    .nav-links i {
+        display: block;
     }
 
     .hero-content {
@@ -457,6 +487,11 @@ body {
         margin: 0 auto;
         display: block;
         position: relative;
+    }
+
+    .hero-image::before,
+    .hero-image::after {
+        justify-content: center;
     }
 
     .social-icons,
@@ -484,13 +519,23 @@ body.dark-mode .footer-container {
 
 body.dark-mode .nav-links a,
 body.dark-mode .logo,
-body.dark-mode .theme-toggle {
+body.dark-mode .social-icons a,
+body.dark-mode .theme-toggle a {
     color: #f9f9f9;
 }
 
 body.dark-mode .nav-links a:hover {
     color: #fc8c05;
 }
+
+body.dark-mode .social-icons a:hover {
+    color: #fc8c05;
+}
+
+body.dark-mode .theme-toggle a:hover {
+    color: #fc8c05;
+}
+
 
 body.dark-mode .btn.secondary {
     border-color: #f9f9f9;
