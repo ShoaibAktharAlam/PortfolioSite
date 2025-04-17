@@ -13,14 +13,14 @@ themeToggle.addEventListener('click', () => {
 });
 
 const tabLinks = document.querySelectorAll(".tab-links");
-  const tabContents = document.querySelectorAll(".tab-contents");
+const tabContents = document.querySelectorAll(".tab-contents");
 
-  tabLinks.forEach((tab, index) => {
+tabLinks.forEach((tab, index) => {
     tab.addEventListener("click", () => {
-      tabLinks.forEach(t => t.classList.remove("active-link"));
-      tabContents.forEach(c => c.classList.remove("active-tab"));
+        tabLinks.forEach(t => t.classList.remove("active-link"));
+        tabContents.forEach(c => c.classList.remove("active-tab"));
 
-      tab.classList.add("active-link");
-      tabContents[index].classList.add("active-tab");
+        tab.classList.add("active-link");
+        tabContents[index].classList.add("active-tab");
     });
 });
