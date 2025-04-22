@@ -602,15 +602,26 @@ body.dark-mode .theme-toggle a:hover {
     color: #fc8c05;
 }
 
+body.dark-mode .btn.primary {
+    background-color: white;
+    color: #333;
+}
+
 body.dark-mode .btn.secondary {
-    border-color: #f9f9f9;
-    color: #f9f9f9;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(229, 206, 206, 0.1);
+    background-color: #0A0A0A;
+    color: white;
+}
+
+body.dark-mode .btn.primary:hover {
+    transform: translateY(-4px);
+    background-color: #fc8c05;
 }
 
 body.dark-mode .btn.secondary:hover {
     transform: translateY(-4px);
     background-color: #fc8c05;
-    color: #1e1e1e;
 }
 
 body.dark-mode .tech-item:hover{
